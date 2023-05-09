@@ -1,17 +1,15 @@
 # DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models
 
-[![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919)
-
-
+### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [![Demo](https://img.shields.io/badge/YouTube-FF0000)](https://youtu.be/Nzom6gkQ2tM)
 
 <div align=center>
-<img src="Framework.png" width="500px">
+<img src="Framework.png" width="750px">
 </div>
 
 
 ## News
 
-📢 **9/May/23** - First release - arxiv, code and pre-trained models.
+📢 **9/May/23** - First release - arxiv, demo, code, pre-trained models and [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/1#issue-1702250404).
 
 
 ## 1. Getting started
@@ -66,6 +64,11 @@ python zeggs_data_to_lmdb.py
 python end2end.py --config=./configs/DiffuseStyleGesture.yml --no_cuda 0 --gpu 0
 ```
 The model will save in `./main/mydiffusion_zeggs/zeggs_mymodel3_wavlm/` folder.
+
+
+<!-- Here is our video. Characters from [here](https://www.mixamo.com/#/?page=2&type=Character).  -->
+<!-- https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/6ae45c42-2275-422b-b0e7-f291e59646eb -->
+
 
 ## Reference
 Our work mainly inspired by: [MDM](https://github.com/GuyTevet/motion-diffusion-model), [Text2Gesture](https://github.com/youngwoo-yoon/Co-Speech_Gesture_Generation), [Listen, denoise, action!](https://arxiv.org/abs/2211.09707)
