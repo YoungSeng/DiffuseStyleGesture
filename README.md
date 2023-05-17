@@ -20,6 +20,7 @@ This code was tested on `NVIDIA GeForce RTX 2080 Ti` and requires:
 
 ```
 conda create -n DiffuseStyleGesture python=3.7
+conda activate DiffuseStyleGesture
 pip install -r requirements.txt 
 ```
 
