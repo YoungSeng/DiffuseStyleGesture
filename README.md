@@ -6,6 +6,9 @@
 <img src="Framework.png" width="750px">
 </div>
 
+## Further Work
+
+📢 [QPGesture](https://github.com/YoungSeng/QPGesture) - Based on motion matching, the upper body gesture.
 
 ## News
 
