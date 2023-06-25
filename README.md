@@ -1,6 +1,6 @@
 # DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models
 
-### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [![Demo](https://img.shields.io/badge/YouTube-FF0000)](https://youtu.be/Nzom6gkQ2tM)
+### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [Demo](https://youtu.be/Nzom6gkQ2tM) | [Representation Video](https://youtu.be/IbpxX1xUo64)
 
 <div align=center>
 <img src="Framework.png" width="750px">
@@ -11,6 +11,8 @@
 📢 [QPGesture](https://github.com/YoungSeng/QPGesture) - Based on motion matching, the upper body gesture.
 
 ## News
+
+📢 **25/Jun/23** - Upload presentation video.
 
 📢 **9/May/23** - First release - arxiv, demo, code, pre-trained models and [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/1#issue-1702250404).
 
