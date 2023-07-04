@@ -376,6 +376,8 @@ def main(args, save_dir, model_path, audio_path=None, mfcc_path=None, audiowavlm
     sample_fn = diffusion.p_sample_loop     # predict x_start
 
     style = style2onehot[audiowavlm_path.split('/')[-1].split('_')[1]]
+    # style = [0, 0, 1, 0, 0, 0]
+    # style = style2onehot['Neutral']
     print(style)
 
     wavlm_model = wavlm_init(mydevice)
