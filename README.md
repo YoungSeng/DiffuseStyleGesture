@@ -46,6 +46,8 @@ You will get the `.bvh` file named `yyyymmdd_hhmmss_smoothing_SG_minibatch_320_[
 https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/2ef7aa70-69e0-4fd9-a551-6b8a5d075d17
 
 
+The parameter `no_cuda` and `gpu` need to be the same, i.e. the GPU you want to use; `max_len` is the length you want to generate, this parameter should be `0` if you want to generate the whole length; if you want to use your own audio, please refer to [this issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/8#issuecomment-1620027786) to set the style and intensity you want.
+
 
 ## 3. Train your own model
 
