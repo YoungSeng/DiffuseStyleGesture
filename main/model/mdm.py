@@ -163,7 +163,7 @@ class MDM(nn.Module):
         else:
             return cond
 
-    def forward(self, x, timesteps, y=None):
+    def forward(self, x, timesteps, y=None,uncond_info=False):
         """
         x: [batch_size, njoints, nfeats, max_frames], denoted x_t in the paper
         timesteps: [batch_size] (int)
@@ -173,7 +173,9 @@ class MDM(nn.Module):
         bs, njoints, nfeats, nframes = x.shape      # 64, 251, 1, 196
         emb_t = self.embed_timestep(timesteps)  # [1, bs, d], (1, 2, 256)
 
-        force_mask = y.get('uncond', False)  # False
+        #force_mask = y.get('uncond', False)  # False
+        force_mask=uncond_info
+        
         if 'style1' in self.cond_mode:
             embed_style = self.mask_cond(self.embed_style(y['style']), force_mask=force_mask)       # (bs, 64)
             if self.n_seed != 0:
