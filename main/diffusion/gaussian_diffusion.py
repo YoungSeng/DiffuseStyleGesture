@@ -306,6 +306,13 @@ class GaussianDiffusion:
         B, C = x.shape[:2]
         assert t.shape == (B,)
         model_output = model(x, self._scale_timesteps(t), **model_kwargs)
+        #Classifier-free guidence 
+        '''
+        model_output_uncond = model(x, self._scale_timesteps(t), **model_kwargs,uncond_info=True)
+        cfg_scale=torch.ones(1, device='cuda') * 3.0
+        model_output_body=model_output_body_uncond + (cfg_scale.view(-1, 1, 1, 1) * (model_output_body - model_output_body_uncond))
+        model_output_hand=model_output_hand_uncond + (cfg_scale.view(-1, 1, 1, 1) * (model_output_hand - model_output_hand_uncond))
+        '''
 
         if 'inpainting_mask' in model_kwargs['y'].keys() and 'inpainted_motion' in model_kwargs['y'].keys():
             inpainting_mask, inpainted_motion = model_kwargs['y']['inpainting_mask'], model_kwargs['y']['inpainted_motion']
