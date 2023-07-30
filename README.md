@@ -12,6 +12,8 @@
 
 ## News
 
+<!--📢 **31/Jul/23** - Upload a [tutorial video](visualize_gesture_using_Blender.md) on visualizing gestures. -->
+
 📢 **25/Jun/23** - Upload presentation video.
 
 📢 **9/May/23** - First release - arxiv, demo, code, pre-trained models and [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/1#issue-1702250404).
@@ -40,7 +42,7 @@ and put it into `./main/mydiffusion_zeggs/`.
 ```python
 python sample.py --config=./configs/DiffuseStyleGesture.yml --no_cuda 0 --gpu 0 --model_path './model000450000.pt' --audiowavlm_path "./015_Happy_4_x_1_0.wav" --max_len 320
 ```
-You will get the `.bvh` file named `yyyymmdd_hhmmss_smoothing_SG_minibatch_320_[1, 0, 0, 0, 0, 0]_123456.bvh` in the `sample_dir` folder, which can then be visualized using [Blender](https://www.blender.org/) with the following result (To visualize bvh with Blender see this [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/8)):
+You will get the `.bvh` file named `yyyymmdd_hhmmss_smoothing_SG_minibatch_320_[1, 0, 0, 0, 0, 0]_123456.bvh` in the `sample_dir` folder, which can then be visualized using [Blender](https://www.blender.org/) with the following result (To visualize bvh with Blender see this [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/8) and this [tutorial video](visualize_gesture_using_Blender.md)):
 
 
 https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/2ef7aa70-69e0-4fd9-a551-6b8a5d075d17
