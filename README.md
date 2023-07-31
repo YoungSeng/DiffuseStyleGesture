@@ -12,7 +12,7 @@
 
 ## News
 
-<!--📢 **31/Jul/23** - Upload a [tutorial video](visualize_gesture_using_Blender.md) on visualizing gestures. -->
+📢 **31/Jul/23** - Upload a [tutorial video](visualize_gesture_using_Blender.md) on visualizing gestures. 
 
 📢 **25/Jun/23** - Upload presentation video.
 
