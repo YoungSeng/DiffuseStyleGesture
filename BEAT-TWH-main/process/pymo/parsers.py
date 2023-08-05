@@ -9,7 +9,7 @@ Based on: https://gist.github.com/johnfredcee/2007503
 '''
 import re
 import numpy as np
-from pymo_BEAT.data import Joint, MocapData
+from pymo.data import Joint, MocapData
 
 class BVHScanner():
     '''

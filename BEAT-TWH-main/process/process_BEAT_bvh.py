@@ -7,10 +7,10 @@ import librosa
 import numpy as np
 from sklearn.pipeline import Pipeline
 from tool import *
-from pymo_BEAT.parsers import BVHParser
-from pymo_BEAT.preprocessing import *
-from pymo_BEAT.viz_tools import *
-from pymo_BEAT.writers import *
+from pymo.parsers import BVHParser
+from pymo.preprocessing import *
+from pymo.viz_tools import *
+from pymo.writers import *
 from scipy.signal import savgol_filter
 from scipy.spatial.transform import Rotation as R
 import torch.nn.functional as F
