@@ -39,15 +39,15 @@ cd ./BEAT-TWH-main/mydiffusion_beat_twh
 ### 2.1 BEAT dataset
 
 The BEAT dataset is so big that we only selected speaker 2 (male) and speaker 10 (female) for training.
-1. Put `model001080000.pt` in `'./BEAT_mymodel4_512_v0_2_1_my/'`.
+1. Put `model001080000.pt` in `'./BEAT_mymodel4_512_v0/'`.
 2. Put `audio_BEAT`, `gesture_BEAT` and `text_BEAT` in `'./BEAT/test_data/'` of downloaded files to `./BEAT_dataset/processed/`.
 
 Run:
 ```angular2html
-python sample.py --config=./configs/DiffuseStyleGesture.yml --gpu 0 --model_path './BEAT_mymodel4_512_v0_2_1_my/model001080000.pt' --max_len 0 --tst_prefix '2_scott_0_1_1'
+python sample.py --config=./configs/DiffuseStyleGesture.yml --gpu 0 --model_path './BEAT_mymodel4_512_v0/model001080000.pt' --max_len 0 --tst_prefix '2_scott_0_1_1'
 ```
 
-You will get the result as `"./BEAT-TWH-main/mydiffusion_beat_twh/BEAT_mymodel4_512_v0_2_1_my/sample_dir_model001080000/2_scott_0_1_1_generated.bvh"`.
+You will get the result as `"./BEAT-TWH-main/mydiffusion_beat_twh/BEAT_mymodel4_512_v0/sample_dir_model001080000/2_scott_0_1_1_generated.bvh"`.
 
 You can visualize it using [Blender](https://www.blender.org/) to get the following result (To visualize bvh with Blender see this [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/8) and this [tutorial video](visualize_gesture_using_Blender.md)):
 
@@ -119,9 +119,9 @@ Put the downloaded file `. /BEAT/train` data into the `./BEAT_dataset/source/` f
 Run:
 ```angular2html
 cd ./BEAT-TWH-main/process/
-python process_BEAT_bvh.py ../../BEAT_dataset/source/ ../../BEAT_dataset/processed/ "... your path/WavLM/WavLM-Large.pt" "... your path/crawl-300d-2M.vec" "v0" "step1" "cuda:0"
+python process_BEAT_bvh.py ../../BEAT_dataset/source/ ../../BEAT_dataset/processed/ None None "v0" "step1" "cuda:0"
 python process_BEAT_bvh.py ../../BEAT_dataset/source/ ../../BEAT_dataset/processed/ "... your path/WavLM/WavLM-Large.pt" "... your path/crawl-300d-2M.vec" "v0" "step3" "cuda:0"
-python process_BEAT_bvh.py ../../BEAT_dataset/source/ ../../BEAT_dataset/processed/ "... your path/WavLM/WavLM-Large.pt" "... your path/crawl-300d-2M.vec" "v0" "step4" "cuda:0"
+python process_BEAT_bvh.py ../../BEAT_dataset/source/ ../../BEAT_dataset/processed/ None None "v0" "step4" "cuda:0"
 python calculate_gesture_statistics.py --dataset BEAT --version "v0"
 ```
 where `step1` is checking if the number of frames in `BEAT` is the same as the actual number of motion frames. 
@@ -132,12 +132,12 @@ You can modify the `cuda`.
 Then you should get mean, std and `.h5` file in `./BEAT-TWH-main/process/`.
 ```angular2html
 cd ../mydiffusion_beat_twh
-python end2end.py --config=./configs/DiffuseStyleGesture.yml --gpu 6
+python end2end.py --config=./configs/DiffuseStyleGesture.yml --gpu 0
 ```
-The model and opt are saved in `./BEAT-TWH-main/mydiffusion_beat_twh/BEAT_mymodel4_512_v0_2_1_my/`.
+The model and opt are saved in `./BEAT-TWH-main/mydiffusion_beat_twh/BEAT_mymodel4_512_v0/`.
 You can adjust the settings of your parameters: `./configs/DiffuseStyleGesture.yml`, e.g. `batch size`.
 
-If you want to train on more data from BEAT, make sure to download the latest BEAT data, see here (because we found a lot of problems with BEAT, such as T-pose facing differently, unsynchronized, missing data, mismatched motion frames, etc., and `step2` is solving the problem of the different T-pose orientation, but without the root norm, the result is not good, so just download the latest BEAT and skip this step)
+If you want to train on more data from BEAT, make sure to download the latest BEAT data, see [here](https://github.com/PantoMatrix/BEAT/issues/77) (because we found a lot of problems with BEAT, such as T-pose facing differently, unsynchronized, missing data, mismatched motion frames, etc., and `step2` is solving the problem of the different T-pose orientation, but without the root norm, the result is not good, so just download the latest BEAT and skip this step)
 
 ### 4.2 TWH dataset
 
@@ -147,7 +147,7 @@ Put the downloaded file `. /TWH/train` data into the `./TWH_dataset/source/` fol
 Run:
 ```angular2html
 cd ../process/
-python process_TWH_bvh.py --dataroot "../../TWH_dataset/source/" --save_path "../../TWH_dataset/processed/" --wavlm_path "/ceph/hdd/yangsc21/Python/DSG/main/mydiffusion_zeggs/WavLM/WavLM-Large.pt" --word2vector_path "/ceph/home/xhw22/avatar/Genea2023/2023_ivi_baseline/crawl-300d-2M.vec" --gpu 0 --debug True
+python process_TWH_bvh.py --dataroot "../../TWH_dataset/source/" --save_path "../../TWH_dataset/processed/" --wavlm_path "... your path/WavLM/WavLM-Large.pt" --word2vector_path "... your path/crawl-300d-2M.vec" --gpu 0 --debug True
 python calculate_gesture_statistics.py --dataset TWH --version "v0"
 ```
 <!-- python process_TWH_bvh.py --dataroot "../../TWH_dataset/source/" --save_path "../../TWH_dataset/processed/" --wavlm_path "/ceph/hdd/yangsc21/Python/DSG/main/mydiffusion_zeggs/WavLM/WavLM-Large.pt" --word2vector_path "/ceph/home/xhw22/avatar/Genea2023/2023_ivi_baseline/crawl-300d-2M.vec" --step 1 --gpu 3 --debug True-->
@@ -163,7 +163,7 @@ Similarly, the model and opt are saved in `./BEAT-TWH-main/mydiffusion_beat_twh/
 
 ## 5. Issues
 
-1. We forgot to normalize the seed gestures in the challenge (fix here), which resulted in the first segment (first 120 frames, 4s) of all the submitted results being a bit strange, which deteriorated the performance.
+1. We forgot to normalize the seed gestures in the challenge (fix [here](https://github.com/YoungSeng/DiffuseStyleGesture/blob/faf16d5bbb38710af1febc815300eced216eb638/BEAT-TWH-main/mydiffusion_beat_twh/sample.py#L112C13-L112C13), which resulted in the first segment (first 120 frames, 4s) of all the submitted results being a bit strange, which deteriorated the performance.
 2. The data after adding BEAT retargeting to TWH in the challenge is not training well, the problem is still being troubleshooted.
 
 ## 6. Citation
