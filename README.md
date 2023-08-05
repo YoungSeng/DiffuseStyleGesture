@@ -12,11 +12,13 @@
 
 ## News
 
+📢 **5/Aug/23** - Release code and pre-trained models of [DiffuseStyleGesture+](BEAT-TWH-main) on BEAT and TWH.
+
 📢 **31/Jul/23** - Upload a [tutorial video](visualize_gesture_using_Blender.md) on visualizing gestures. 
 
 📢 **25/Jun/23** - Upload presentation video.
 
-📢 **9/May/23** - First release - arxiv, demo, code, pre-trained models and [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/1#issue-1702250404).
+📢 **9/May/23** - First release - arxiv, demo, code, pre-trained models on ZEGGS and [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/1#issue-1702250404).
 
 
 ## 1. Getting started
