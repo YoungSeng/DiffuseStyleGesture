@@ -2,7 +2,7 @@
 # The DiffuseStyleGesture+ entry to the GENEA Challenge 2023
 
 <div center>
-<img src="DSGplus.png" width="650px">
+<img src="DSGplus.png" width="550px">
 </div>
 
 ### Updates on DiffuseStyleGesture
@@ -51,6 +51,9 @@ You will get the result as `"./BEAT-TWH-main/mydiffusion_beat_twh/BEAT_mymodel4_
 
 You can visualize it using [Blender](https://www.blender.org/) to get the following result (To visualize bvh with Blender see this [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/8) and this [tutorial video](visualize_gesture_using_Blender.md)):
 
+https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/b84a3b11-c023-4df2-b5b2-c1bfb57f8dc9
+
+On the left is GT, in the middle is the gesture generated above, and on the right is the result of retraining by extracting motion features based on the ZEGGS, bvh library's motion data processing method (notice that the ends are off by a segment).
 
 ### 2.2 TWH dataset (GENEA 2023)
 
@@ -64,6 +67,10 @@ python sample.py --config=./configs/DiffuseStyleGesture.yml --dataset TWH --gpu 
 You will get the result as `"./BEAT-TWH-main/mydiffusion_beat_twh/TWH_mymodel4_512_v0/sample_dir_model001200000/val_2023_v0_014_main-agent.bvh"`.
 
 
+
+https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/ea8d3302-63ff-4fe9-b61d-4f1782ba65d8
+
+GT on the left, generated gestures on the right.
 
 ## 3. Use your own audio and text
 
@@ -92,6 +99,10 @@ python sample.py --config=./configs/DiffuseStyleGesture.yml --dataset TWH --gpu 
 It takes about three minutes to load the word2vector model.
 
 
+
+https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/635d42c8-834e-4182-9777-92141dba592c
+
+On the left are the gestures generated using the TWH dataset, and on the right are the results trained on BEAT.
 
 ## 4. Re-training your own dataset
 
@@ -167,3 +178,6 @@ If you find this repo useful for your research, please consider citing the follo
   year={2023}
 }
 ```
+Feel free to contact us ([yangsc21@mails.tsinghua.edu.cn](yangsc21@mails.tsinghua.edu.cn) or [xhw22@mails.tsinghua.edu.cn](xhw22@mails.tsinghua.edu.cn)) with any questions or concerns.
+
+
