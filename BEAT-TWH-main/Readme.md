@@ -1,6 +1,9 @@
 
 # The DiffuseStyleGesture+ entry to the GENEA Challenge 2023
 
+### [Demo Video](https://youtu.be/CIzUjsOJ-kc)
+
+
 <div center>
 <img src="DSGplus.png" width="550px">
 </div>
