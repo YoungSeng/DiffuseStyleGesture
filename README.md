@@ -1,6 +1,6 @@
 # DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models
 
-### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [Demo](https://youtu.be/Nzom6gkQ2tM) | [Representation Video](https://youtu.be/IbpxX1xUo64)
+### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [Demo](https://youtu.be/Nzom6gkQ2tM) | [Presentation Video](https://youtu.be/IbpxX1xUo64)
 
 <div align=center>
 <img src="Framework.png" width="750px">
