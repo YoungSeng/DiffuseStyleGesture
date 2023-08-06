@@ -1,0 +1,458 @@
+{
+  "transcript": "Nice to meet you all, this is a TTS synthesized audio for The DiffuseStyleGesture+ entry to the GENEA Challenge 2023 demo video.",
+  "words": [
+    {
+      "alignedWord": "nice",
+      "case": "success",
+      "end": 0.43,
+      "endOffset": 4,
+      "phones": [
+        {
+          "duration": 0.11,
+          "phone": "n_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "ay_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "s_E"
+        }
+      ],
+      "start": 0.13,
+      "startOffset": 0,
+      "word": "Nice"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 0.54,
+      "endOffset": 7,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 0.43,
+      "startOffset": 5,
+      "word": "to"
+    },
+    {
+      "alignedWord": "meet",
+      "case": "success",
+      "end": 0.76,
+      "endOffset": 12,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "m_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "t_E"
+        }
+      ],
+      "start": 0.54,
+      "startOffset": 8,
+      "word": "meet"
+    },
+    {
+      "alignedWord": "you",
+      "case": "success",
+      "end": 0.93,
+      "endOffset": 16,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "y_B"
+        },
+        {
+          "duration": 0.12,
+          "phone": "uw_E"
+        }
+      ],
+      "start": 0.76,
+      "startOffset": 13,
+      "word": "you"
+    },
+    {
+      "alignedWord": "all",
+      "case": "success",
+      "end": 1.31,
+      "endOffset": 20,
+      "phones": [
+        {
+          "duration": 0.19,
+          "phone": "ao_B"
+        },
+        {
+          "duration": 0.19,
+          "phone": "l_E"
+        }
+      ],
+      "start": 0.93,
+      "startOffset": 17,
+      "word": "all"
+    },
+    {
+      "alignedWord": "this",
+      "case": "success",
+      "end": 1.67,
+      "endOffset": 26,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "s_E"
+        }
+      ],
+      "start": 1.48,
+      "startOffset": 22,
+      "word": "this"
+    },
+    {
+      "alignedWord": "is",
+      "case": "success",
+      "end": 1.81,
+      "endOffset": 29,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "ih_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "z_E"
+        }
+      ],
+      "start": 1.67,
+      "startOffset": 27,
+      "word": "is"
+    },
+    {
+      "alignedWord": "a",
+      "case": "success",
+      "end": 1.9000000000000001,
+      "endOffset": 31,
+      "phones": [
+        {
+          "duration": 0.09,
+          "phone": "ah_S"
+        }
+      ],
+      "start": 1.81,
+      "startOffset": 30,
+      "word": "a"
+    },
+    {
+      "case": "not-found-in-audio",
+      "endOffset": 35,
+      "startOffset": 32,
+      "word": "TTS"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 3.0599999999999996,
+      "endOffset": 47,
+      "phones": [
+        {
+          "duration": 1.16,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 1.9,
+      "startOffset": 36,
+      "word": "synthesized"
+    },
+    {
+      "alignedWord": "audio",
+      "case": "success",
+      "end": 3.6,
+      "endOffset": 53,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "aa_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.09,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.23,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 3.06,
+      "startOffset": 48,
+      "word": "audio"
+    },
+    {
+      "alignedWord": "for",
+      "case": "success",
+      "end": 3.7800000000000002,
+      "endOffset": 57,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "f_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "er_E"
+        }
+      ],
+      "start": 3.64,
+      "startOffset": 54,
+      "word": "for"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 3.8899999999999997,
+      "endOffset": 61,
+      "phones": [
+        {
+          "duration": 0.05,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 3.78,
+      "startOffset": 58,
+      "word": "The"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 5.18,
+      "endOffset": 81,
+      "phones": [
+        {
+          "duration": 1.29,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 3.89,
+      "startOffset": 62,
+      "word": "DiffuseStyleGesture"
+    },
+    {
+      "alignedWord": "entry",
+      "case": "success",
+      "end": 5.68,
+      "endOffset": 88,
+      "phones": [
+        {
+          "duration": 0.07,
+          "phone": "eh_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "t_I"
+        },
+        {
+          "duration": 0.1,
+          "phone": "r_I"
+        },
+        {
+          "duration": 0.19,
+          "phone": "iy_E"
+        }
+      ],
+      "start": 5.18,
+      "startOffset": 83,
+      "word": "entry"
+    },
+    {
+      "alignedWord": "to",
+      "case": "success",
+      "end": 5.84,
+      "endOffset": 91,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "t_B"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ih_E"
+        }
+      ],
+      "start": 5.72,
+      "startOffset": 89,
+      "word": "to"
+    },
+    {
+      "alignedWord": "the",
+      "case": "success",
+      "end": 5.97,
+      "endOffset": 95,
+      "phones": [
+        {
+          "duration": 0.06,
+          "phone": "dh_B"
+        },
+        {
+          "duration": 0.07,
+          "phone": "ah_E"
+        }
+      ],
+      "start": 5.84,
+      "startOffset": 92,
+      "word": "the"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 6.319999999999999,
+      "endOffset": 101,
+      "phones": [
+        {
+          "duration": 0.35,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 5.97,
+      "startOffset": 96,
+      "word": "GENEA"
+    },
+    {
+      "alignedWord": "challenge",
+      "case": "success",
+      "end": 6.75,
+      "endOffset": 111,
+      "phones": [
+        {
+          "duration": 0.14,
+          "phone": "ch_B"
+        },
+        {
+          "duration": 0.08,
+          "phone": "ae_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "l_I"
+        },
+        {
+          "duration": 0.04,
+          "phone": "ah_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "n_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "jh_E"
+        }
+      ],
+      "start": 6.32,
+      "startOffset": 102,
+      "word": "Challenge"
+    },
+    {
+      "alignedWord": "<unk>",
+      "case": "success",
+      "end": 7.609999999999999,
+      "endOffset": 116,
+      "phones": [
+        {
+          "duration": 0.84,
+          "phone": "oov_S"
+        }
+      ],
+      "start": 6.77,
+      "startOffset": 112,
+      "word": "2023"
+    },
+    {
+      "alignedWord": "demo",
+      "case": "success",
+      "end": 7.91,
+      "endOffset": 121,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "d_B"
+        },
+        {
+          "duration": 0.09,
+          "phone": "eh_I"
+        },
+        {
+          "duration": 0.07,
+          "phone": "m_I"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 7.61,
+      "startOffset": 117,
+      "word": "demo"
+    },
+    {
+      "alignedWord": "video",
+      "case": "success",
+      "end": 8.45,
+      "endOffset": 127,
+      "phones": [
+        {
+          "duration": 0.08,
+          "phone": "v_B"
+        },
+        {
+          "duration": 0.06,
+          "phone": "ih_I"
+        },
+        {
+          "duration": 0.05,
+          "phone": "d_I"
+        },
+        {
+          "duration": 0.11,
+          "phone": "iy_I"
+        },
+        {
+          "duration": 0.24,
+          "phone": "ow_E"
+        }
+      ],
+      "start": 7.91,
+      "startOffset": 122,
+      "word": "video"
+    }
+  ]
+}
