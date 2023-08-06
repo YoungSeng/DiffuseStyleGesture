@@ -86,7 +86,7 @@ python3 "...your gentle path/gentle/align.py" "tts.mp3" "tts.txt" -o "tts_align.
 python process_text.py
 ffmpeg -i tts.mp3 tts.wav
 ```
-And you will get `tts.wav`, `tts_align.txt` and `tts_align_process.tsv`, which text format is same as TWH.
+And you will get `tts.wav`, `tts_align.txt`, and `tts_align_process.tsv`, which text format is the same as TWH.
 
 ### 3.2 Generate gesture
 
@@ -108,7 +108,7 @@ On the left are the gestures generated using the TWH dataset, and on the right a
 
 Here we only use one or two files to illustrate the data processing and training process.
 
-You can get all the data from offical [BEAT](https://github.com/PantoMatrix/BEAT) and [TWH](https://github.com/facebookresearch/TalkingWithHands32M).
+You can get all the data from official [BEAT](https://github.com/PantoMatrix/BEAT) and [TWH](https://github.com/facebookresearch/TalkingWithHands32M).
 
 Download the [WavLM Large](https://github.com/microsoft/unilm/tree/master/wavlm) and [crawl-300d-2M.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip).
 
@@ -141,7 +141,7 @@ If you want to train on more data from BEAT, make sure to download the latest BE
 
 ### 4.2 TWH dataset
 
-We train on the official training dataset of Talking With Hands, the data has been compiled by the GENEA organizers, see [here](https://zenodo.org/record/8199133).
+We trained on all the data in the GENEA Challenge 2023 training dataset, the data has been compiled by the GENEA organizers, see [here](https://zenodo.org/record/8199133).
 
 Put the downloaded file `. /TWH/train` data into the `./TWH_dataset/source/` folder.
 Run:
@@ -174,7 +174,7 @@ If you find this repo useful for your research, please consider citing the follo
 @inproceedings{yang2022DiffuseStyleGestureplus,
   title={The DiffuseStyleGesture+ entry to the GENEA Challenge 2023},
   author={Sicheng Yang, Haiwei Xue, Zhensong Zhang, Minglei Li, Zhiyong Wu, Xiaofei Wu, Songcen Xu, Zonghong Dai},
-  booktitle={Proceedings of the 2023 International Conference on Multimodal Interaction},,
+  booktitle={Proceedings of the 2023 International Conference on Multimodal Interaction},
   year={2023}
 }
 ```
