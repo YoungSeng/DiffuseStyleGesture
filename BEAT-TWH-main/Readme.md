@@ -93,6 +93,8 @@ And you will get `tts.wav`, `tts_align.txt`, and `tts_align_process.tsv`, which 
 
 ### 3.2 Generate gesture
 
+Download the [WavLM Large](https://github.com/microsoft/unilm/tree/master/wavlm) and [crawl-300d-2M.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip).
+
 You can choose TWH or BEAT dataset.
 ```angular2html
 cd ../mydiffusion_beat_twh
@@ -112,8 +114,6 @@ On the left are the gestures generated using the TWH dataset, and on the right a
 Here we only use one or two files to illustrate the data processing and training process.
 
 You can get all the data from official [BEAT](https://github.com/PantoMatrix/BEAT) and [TWH](https://github.com/facebookresearch/TalkingWithHands32M).
-
-Download the [WavLM Large](https://github.com/microsoft/unilm/tree/master/wavlm) and [crawl-300d-2M.vec](https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M.vec.zip).
 
 ### 4.1 BEAT dataset
 
