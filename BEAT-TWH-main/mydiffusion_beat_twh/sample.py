@@ -82,6 +82,16 @@ def inference(args, save_dir, prefix, textaudio, sample_fn, model, n_frames=0, s
     data_mean = np.array(data_mean_)
     data_std = np.array(data_std_)
     # std = np.clip(data_std, a_min=0.01, a_max=None)
+    if args.name == 'DiffuseStyleGesture++':
+        gesture_flag1 = np.load("../../BEAT_dataset/processed/" + 'gesture_BEAT' + "/2_scott_0_1_1.npy")[:args.n_seed + 2]
+        gesture_flag1 = (gesture_flag1 - data_mean) / data_std
+        gesture_flag1_vel = gesture_flag1[1:] - gesture_flag1[:-1]
+        gesture_flag1_acc = gesture_flag1_vel[1:] - gesture_flag1_vel[:-1]
+        gesture_flag1_ = np.concatenate((gesture_flag1[2:], gesture_flag1_vel[1:], gesture_flag1_acc), axis=1)  # (args.n_seed, args.njoints)
+        gesture_flag1_ = torch.from_numpy(gesture_flag1_).float().transpose(0, 1).unsqueeze(0).to(mydevice)
+        gesture_flag1_ = gesture_flag1_.unsqueeze(2)
+        model_kwargs_['y']['seed_last'] = gesture_flag1_
+
     
     shape_ = (1, model.njoints, model.nfeats, args.n_poses)
     out_list = []
@@ -94,7 +104,9 @@ def inference(args, save_dir, prefix, textaudio, sample_fn, model, n_frames=0, s
                 model_kwargs_['y']['audio'] = torch.cat((pad_zeros, model_kwargs_['y']['audio']), 0).transpose(0, 1)      # attention 3
             elif args.name == 'DiffuseStyleGesture+':
                 model_kwargs_['y']['audio'] = model_kwargs_['y']['audio'].transpose(0, 1)       # attention 4
-
+            elif args.name == 'DiffuseStyleGesture++':
+                model_kwargs_['y']['audio'] = model_kwargs_['y']['audio'][:-args.n_seed, ...].transpose(0, 1)       # attention 5
+                
             # model_kwargs_['y']['seed'] = torch.zeros([1, args.njoints, 1, args.n_seed]).to(mydevice)
 
             if dataset == 'BEAT':
@@ -122,6 +134,8 @@ def inference(args, save_dir, prefix, textaudio, sample_fn, model, n_frames=0, s
                 model_kwargs_['y']['audio'] = torch.cat((pad_audio, model_kwargs_['y']['audio']), 0).transpose(0, 1)        # attention 3
             elif args.name == 'DiffuseStyleGesture+':
                 model_kwargs_['y']['audio'] = model_kwargs_['y']['audio'].transpose(0, 1)  # attention 4
+            elif args.name == 'DiffuseStyleGesture++':
+                model_kwargs_['y']['audio'] = model_kwargs_['y']['audio'][:-args.n_seed, ...].transpose(0, 1)  # attention 5
 
             model_kwargs_['y']['seed'] = out_list[-1][..., -args.n_seed:].to(mydevice)
 
@@ -255,6 +269,9 @@ def main(args, save_dir, model_path, tst_path=None, max_len=0, skip_timesteps=0,
 
 
 if __name__ == '__main__':
+    '''
+    python sample.py --config=./configs/DiffuseStyleGesture.yml --gpu 7 --model_path "./BEAT_mymodel4_512_v0/model001260000.pt" --max_len 0 --tst_prefix '2_scott_0_1_1'
+    '''
     parser = argparse.ArgumentParser(description='DiffuseStyleGesture')
     parser.add_argument('--config', default='./configs/DiffuseStyleGesture.yml')
     parser.add_argument('--gpu', type=str, default='0')
@@ -279,12 +296,14 @@ if __name__ == '__main__':
     # pprint(config)
     config = EasyDict(config)
 
-    assert config.name in ['DiffuseStyleGesture', 'DiffuseStyleGesture+']
+    assert config.name in ['DiffuseStyleGesture', 'DiffuseStyleGesture+', 'DiffuseStyleGesture++']
     if config.name == 'DiffuseStyleGesture+':
         config.cond_mode = 'cross_local_attention4_style1_sample'
     elif config.name == 'DiffuseStyleGesture':
         config.cond_mode = 'cross_local_attention3_style1_sample'
-
+    elif config.name == 'DiffuseStyleGesture++':
+        config.cond_mode = 'cross_local_attention5_style1_sample'
+        
     if config.dataset == 'BEAT':
         config.style_dim = 2
         config.audio_feature_dim = 1434
