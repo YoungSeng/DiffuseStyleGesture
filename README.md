@@ -100,11 +100,9 @@ If you find this code useful in your research, please cite:
   booktitle = {Proceedings of the Thirty-Second International Joint Conference on
                Artificial Intelligence, {IJCAI-23}},
   publisher = {International Joint Conferences on Artificial Intelligence Organization},
-  editor    = {Edith Elkind},
   pages     = {5860--5868},
   year      = {2023},
   month     = {8},
-  note      = {AI and Arts},
   doi       = {10.24963/ijcai.2023/650},
   url       = {https://doi.org/10.24963/ijcai.2023/650},
 }
