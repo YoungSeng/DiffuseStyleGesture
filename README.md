@@ -1,6 +1,6 @@
 # DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models
 
-### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [Demo](https://youtu.be/Nzom6gkQ2tM) | [Presentation Video](https://youtu.be/IbpxX1xUo64)
+### [![arXiv](https://img.shields.io/badge/arXiv-2305.04919-red.svg)](https://arxiv.org/abs/2305.04919) | [Demo](https://youtu.be/Nzom6gkQ2tM) | [Presentation Video](https://youtu.be/IbpxX1xUo64) | [Conference archive](https://www.ijcai.org/proceedings/2023/0650.pdf)
 
 <div align=center>
 <img src="Framework.png" width="750px">
@@ -94,12 +94,19 @@ Our work mainly inspired by: [MDM](https://github.com/GuyTevet/motion-diffusion-
 If you find this code useful in your research, please cite:
 
 ```
-@inproceedings{yang2023DiffuseStyleGesture,
-  author       = {Sicheng Yang and Zhiyong Wu and Minglei Li and Zhensong Zhang and Lei Hao and Weihong Bao and Ming Cheng and Long Xiao},
-  title        = {DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models},
-  booktitle    = {Proceedings of the 32nd International Joint Conference on Artificial Intelligence, {IJCAI} 2023},
-  publisher    = {ijcai.org},
-  year         = {2023},
+@inproceedings{ijcai2023p650,
+  title     = {DiffuseStyleGesture: Stylized Audio-Driven Co-Speech Gesture Generation with Diffusion Models},
+  author    = {Yang, Sicheng and Wu, Zhiyong and Li, Minglei and Zhang, Zhensong and Hao, Lei and Bao, Weihong and Cheng, Ming and Xiao, Long},
+  booktitle = {Proceedings of the Thirty-Second International Joint Conference on
+               Artificial Intelligence, {IJCAI-23}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  editor    = {Edith Elkind},
+  pages     = {5860--5868},
+  year      = {2023},
+  month     = {8},
+  note      = {AI and Arts},
+  doi       = {10.24963/ijcai.2023/650},
+  url       = {https://doi.org/10.24963/ijcai.2023/650},
 }
 ```
 
