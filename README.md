@@ -12,6 +12,8 @@
 
 ## News
 
+📢 **29/Aug/23** - Release the [paper](https://arxiv.org/abs/2308.13879) of DiffuseStyleGesture+, refer to the official [paper](https://arxiv.org/abs/2308.12646) of [GENEA Challenge 2023](https://genea-workshop.github.io/2023/challenge/) to get more.
+
 📢 **5/Aug/23** - Release code and pre-trained models of [DiffuseStyleGesture+](BEAT-TWH-main) on BEAT and TWH.
 
 📢 **31/Jul/23** - Upload a [tutorial video](visualize_gesture_using_Blender.md) on visualizing gestures. 
