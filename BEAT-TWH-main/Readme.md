@@ -107,7 +107,7 @@ It takes about three minutes to load the word2vector model.
 
 https://github.com/YoungSeng/DiffuseStyleGesture/assets/37477030/635d42c8-834e-4182-9777-92141dba592c
 
-On the left are the gestures generated using the TWH dataset, and on the right are the results trained on BEAT.
+On the left are the gestures generated using the BEAT dataset, and on the right are the results trained on TWH.
 
 ## 4. Re-training your own dataset
 
