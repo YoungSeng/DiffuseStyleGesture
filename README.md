@@ -10,6 +10,8 @@
 
 📢 [QPGesture](https://github.com/YoungSeng/QPGesture) - Based on motion matching, the upper body gesture.
 
+📢 [UnifiedGesture](https://github.com/YoungSeng/UnifiedGesture) - Training on multiple gesture datasets, refine the gestures.
+
 ## News
 
 📢 **29/Aug/23** - Release the [paper](https://arxiv.org/abs/2308.13879) of DiffuseStyleGesture+, refer to the official [paper](https://arxiv.org/abs/2308.12646) of [GENEA Challenge 2023](https://genea-workshop.github.io/2023/challenge/) to get more.
