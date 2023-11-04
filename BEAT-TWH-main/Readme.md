@@ -168,6 +168,7 @@ Similarly, the model and opt are saved in `./BEAT-TWH-main/mydiffusion_beat_twh/
 
 1. We forgot to normalize the seed gestures in the challenge (fix [here](https://github.com/YoungSeng/DiffuseStyleGesture/blob/faf16d5bbb38710af1febc815300eced216eb638/BEAT-TWH-main/mydiffusion_beat_twh/sample.py#L112C13-L112C13), which resulted in the first segment (first 120 frames, 4s) of all the submitted results being a bit strange, which deteriorated the performance.
 2. The data after adding BEAT retargeting to TWH in the challenge is not training well, the problem is still being troubleshooted.
+3. There are some discrepancies between the RM in the framework and the paper, thanks [issue](https://github.com/YoungSeng/DiffuseStyleGesture/issues/23).
 
 ## 6. Citation
 
