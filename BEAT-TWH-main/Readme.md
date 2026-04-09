@@ -1,7 +1,7 @@
 
 # The DiffuseStyleGesture+ entry to the GENEA Challenge 2023
 
-### [Demo Video](https://youtu.be/CIzUjsOJ-kc)
+### [Demo Video](https://youtu.be/CIzUjsOJ-kc) | [Conference archive](https://dl.acm.org/doi/abs/10.1145/3577190.3616114) | [OpenReview](https://openreview.net/forum?id=zrcgseqv0n2) | [Arxiv](https://arxiv.org/abs/2308.13879)
 
 
 <div center>
